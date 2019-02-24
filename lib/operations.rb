@@ -1,8 +1,11 @@
 def unsafe?(speed)
 
-if speed < 40 ; speed > 60 ? "true" : "false"
-end
-
+if speed > 60
+  puts "true"
+  elsif speed < 40
+  puts "true"
+  else 40 < speed > 60
+  puts "false"
 end
 	
 # Use an `if`/`else` statement pair to build the `unsafe?` method. It should return `true` if the speed is either below `40` or above `60`. *Going 30 mph on the freeway would be unsafe, as would going 95 mph. Going 50 miles per hour, however, would return `false` as that's within the "safe" range.*
